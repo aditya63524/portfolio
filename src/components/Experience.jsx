@@ -68,7 +68,6 @@ const Experience = () => {
 				display: 'flex',
 				flexDirection: 'column',
 				alignItems: 'center',
-				padding: '20px',
 				boxSizing: 'border-box',
 			}}
 		>
