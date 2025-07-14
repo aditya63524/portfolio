@@ -32,74 +32,19 @@ const About = () => {
         width: '100%',
         maxWidth: '1200px',
         boxSizing: 'border-box',
-        flexDirection: window.innerWidth > 768 ? 'row-reverse' : 'column', // swap order on desktop and tablet
+        flexDirection: 'row', // education on left, profile.exe on right for all views except mobile
       }}>
-        {/* Left big card (now on right in desktop) */}
+        {/* Education Card - Left side */}
         <div
           style={{
-            flex: '1 1 600px',
+            flex: '1 1 400px',
             minWidth: '300px',
-            background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
-            border: '2px solid #00ffff',
-            borderRadius: '16px',
-            boxShadow: '0 0 14px #00fff7a0',
-            padding: '32px 32px 20px 32px',
-            marginBottom: '20px',
-            color: '#fff',
-            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '24px',
             boxSizing: 'border-box'
           }}
         >
-          <div
-            className="profile-exe-title"
-            style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontWeight: 700,
-              fontSize: '2rem',
-              color: '#00ffff',
-              marginBottom: '18px',
-              letterSpacing: '1.5px',
-              textAlign: 'left'
-            }}
-          >
-            Profile.exe
-          </div>
-          <div
-            className="profile-exe-desc"
-            style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontSize: '1.15rem',
-              color: '#e0e0e0',
-              marginBottom: '18px',
-              lineHeight: 1.7,
-              textAlign: 'justify'
-            }}
-          >
-            I'm a passionate Computer Science student at Manipal University Jaipur, specializing in full-stack development and cloud technologies. With a strong foundation in modern web technologies and a keen interest in innovative solutions, I strive to create impactful digital experiences.
-          </div>
-          <div
-            className="profile-exe-desc"
-            style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontSize: '1.15rem',
-              color: '#e0e0e0',
-              marginBottom: '18px',
-              lineHeight: 1.7,
-              textAlign: 'justify'
-            }}
-          >
-            My journey in technology is driven by curiosity and a desire to solve real-world problems. From developing digital rehabilitation systems to creating conference websites, I enjoy working on projects that make a difference.
-          </div>
-        </div>
-        {/* Right two stacked cards (now on left in desktop) */}
-        <div style={{
-          flex: '1 1 400px',
-          minWidth: '300px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '24px',
-          boxSizing: 'border-box'
-        }}>
           <div style={{
             background: 'linear-gradient(120deg, #002a1a 60%, #003300 80%, #00ff99 120%)',
             border: '2px solid #39ff14',
@@ -214,6 +159,64 @@ const About = () => {
             }}>
               DAV Public School
             </div>
+          </div>
+        </div>
+        
+        {/* Profile.exe Card - Right side */}
+        <div
+          style={{
+            flex: '1 1 600px',
+            minWidth: '300px',
+            background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
+            border: '2px solid #00ffff',
+            borderRadius: '16px',
+            boxShadow: '0 0 14px #00fff7a0',
+            padding: '32px 32px 20px 32px',
+            marginBottom: '20px',
+            color: '#fff',
+            position: 'relative',
+            boxSizing: 'border-box'
+          }}
+        >
+          <div
+            className="profile-exe-title"
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontWeight: 700,
+              fontSize: '2rem',
+              color: '#00ffff',
+              marginBottom: '18px',
+              letterSpacing: '1.5px',
+              textAlign: 'left'
+            }}
+          >
+            Profile.exe
+          </div>
+          <div
+            className="profile-exe-desc"
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontSize: '1.15rem',
+              color: '#e0e0e0',
+              marginBottom: '18px',
+              lineHeight: 1.7,
+              textAlign: 'justify'
+            }}
+          >
+            I'm a passionate Computer Science student at Manipal University Jaipur, specializing in full-stack development and cloud technologies. With a strong foundation in modern web technologies and a keen interest in innovative solutions, I strive to create impactful digital experiences.
+          </div>
+          <div
+            className="profile-exe-desc"
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontSize: '1.15rem',
+              color: '#e0e0e0',
+              marginBottom: '18px',
+              lineHeight: 1.7,
+              textAlign: 'justify'
+            }}
+          >
+            My journey in technology is driven by curiosity and a desire to solve real-world problems. From developing digital rehabilitation systems to creating conference websites, I enjoy working on projects that make a difference.
           </div>
         </div>
       </div>
