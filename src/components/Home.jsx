@@ -73,7 +73,7 @@ const Home = () => {
         </div>
 
         {/* Right: Terminal + cards */}
-        <div className="home-right">
+        <div className="home-right" style={{ display: window.innerWidth <= 768 ? 'none' : 'flex' }}>
           <div className="terminal-section">
             <TerminalWindow titleBarColor="green">
               {`$ whoami
